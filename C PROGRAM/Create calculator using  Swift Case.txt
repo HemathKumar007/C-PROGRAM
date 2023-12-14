@@ -1,0 +1,33 @@
+#include<stdio.h>
+int
+main ()
+{
+  int num1;
+  int num2;
+  char op;
+  printf ("ENTER THE FIRST NUMBER:");
+  scanf ("%d", &num1);
+  printf ("ENTER THE SECOND NUMBER:");
+  scanf ("%d", &num2);
+  printf ("ENTER THE SYMBOL:");
+  scanf ("\n %c", &op);
+  switch (op)
+    {
+    case '+':
+      printf ("sum:%d", num1 + num2);
+      break;
+    case '-':
+      printf ("difference:%d", num1 - num2);
+      break;
+    case '*':
+      printf ("product:%d", num1 * num2);
+      break;
+    case '/':
+      printf ("divide:%d", num1 / num2);
+      break;
+    default:
+      printf ("symbol  is invalid");
+      break;
+    }
+  return 0;
+}
